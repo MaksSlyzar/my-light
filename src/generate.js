@@ -31,6 +31,7 @@ export function getDayTime (group, day, hours, minutes) {
 
             return {
                 group: group,
+                day:day,
                 now: { 
                     from: toNormalTime(time[0]),
                     to: toNormalTime(time[1]),

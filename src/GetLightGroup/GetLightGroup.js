@@ -29,8 +29,8 @@ function GetLightGroup (props) {
     const data = getDayTime(group, day, hours, minutes);
     console.log(data);
 
-    const activities = ["електроенергія є", "відключення електроенергії", "можливе відключення"];
-    const foractivities = ["електроенергія буде", "відключення електроенергії", "можливе відключення"];
+    const activities = ["відключення електроенергії", "електроенергія є", "можливе відключення"];
+    const foractivities = ["відключення електроенергії", "електроенергія буде", "можливе відключення"];
 
     return (
         <div className="GetLightGroup">
