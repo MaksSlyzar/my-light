@@ -30,6 +30,7 @@ function GetLightGroup (props) {
     console.log(data);
 
     const activities = ["електроенергія є", "відключення електроенергії", "можливе відключення"];
+    const foractivities = ["електроенергія буде", "відключення електроенергії", "можливе відключення"];
 
     return (
         <div className="GetLightGroup">
@@ -45,7 +46,7 @@ function GetLightGroup (props) {
 
             <div>
                 <h6>Через {vtime2(data.forNextTime)}
-                <span> {activities[data.next.activity]} до {vtime(data.next.to)}</span>
+                <span> {foractivities[data.next.activity]} до {vtime(data.next.to)}</span>
                 </h6>
             </div>
         </div>
